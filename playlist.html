@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="playlist.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn2.vectorstock.com/i/thumb-large/54/66/silver-headphone-with-green-music-wave-vector-21165466.jpg" alt="" width="50" height="40" style="filter: invert(85%);">
+            </a>
+            <a class="navbar-brand" style="font-family: 'Lobster', cursive" href="#">MyPlayer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-family: 'Lobster', cursive">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="playlist.html">Playlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Myplaylist - No Copyright Sounds</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Itni Si Baat Hai</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div> 
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100%">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Itni si baat hai</span>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9dc82b4fdc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>
